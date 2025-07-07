@@ -689,4 +689,98 @@ body[data-theme="dark"] form label {
      📱 Responsives
      =============================== */
   @media (max-width:768px){ .hero-content{padding:4rem 1.5rem;} }
-  
+
+
+
+
+
+
+
+  /* 📱 Dynamisch skalierende Basisgröße für alle Geräte */
+html {
+  font-size: clamp(12px, 2vw, 18px); /* zwischen 12px und 18px je nach Viewport */
+}
+
+/* 📱 Finaler Header-Fix */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .nav-menu li {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .nav-menu li a {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+
+  .header-right {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.4rem;
+  }
+
+  #lang-switch,
+  #theme-toggle {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.4rem;
+    max-width: 50px;
+    min-width: 40px;
+  }
+}
+/* 🔤 Sprache: Nur Kürzel bei kleinen Geräten */
+@media (max-width: 768px) {
+  #lang-switch {
+    width: 50px;
+    min-width: 40px;
+    font-size: 0.85rem;
+    text-align: center;
+    appearance: none;         /* ⛔ entfernt nativen Dropdown-Pfeil in vielen Browsern */
+    -webkit-appearance: none; /* für Safari */
+    -moz-appearance: none;    /* für Firefox */
+    background-position: right 0.3rem center;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* 📱 Sprache im Dropdown bei kleinen Bildschirmen vereinfachen */
+@media (max-width: 480px) {
+  #lang-switch {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.3rem;
+    min-width: auto;
+    max-width: 100px; /* begrenzt auf ein schönes Maß */
+    text-align: left;
+    white-space: nowrap;
+  }
+
+
+
+  #lang-switch {
+    max-width: 65px;
+  }
+}
