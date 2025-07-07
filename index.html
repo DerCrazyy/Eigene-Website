@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title" data-i18n="page.title">Marcel Usinger – Persönliche Website</title>
+  <link rel="stylesheet" href="root/css/style.css" />
+</head>
+
+<body>
+  <!-- ✅ Header MUSS im body liegen -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo">Marcel</div>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#hero" data-i18n="nav.start">Start</a></li>
+        <li><a href="#about" data-i18n="nav.about">Über mich</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>        
+      </ul>
+    </nav>
+    <div class="header-right">
+      <button id="theme-toggle" aria-label="Theme umschalten">🌙</button>
+      <select id="lang-switch" aria-label="Sprache wählen">
+        <option value="auto">🌐</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="zh">🇨🇳 中文</option>
+        <option value="ar">🇸🇦 العربية</option>
+      </select>
+    </div>
+  </header>
+
+      
+
+  <!-- Hero Sektion -->
+  <section id="hero" class="hero with-video-background">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="root/assets/video/surfing.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 data-i18n="hero.title">Hi, ich bin Marcel 👋</h1>
+        <p class="hero-subline" data-i18n="hero.subtitle">Windsurfer, Serienjunkie, kreativer Kopf & jemand, der Neues liebt.</p>
+      <a href="#about" class="btn-hero" data-i18n="hero.button">Mehr erfahren</a>
+    </div>
+  </section>
+
+    
+  <style>
+    /* Spritzer-Ebene */
+    #water-splash-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+    </style>
+    
+    <canvas id="water-splash-canvas"></canvas>
+    
+    <script>
+        const canvas = document.getElementById('water-splash-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let drops = [];
+        
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Generiert zufällige Wasserspritzer
+        function createDrop() {
+          const x = Math.random() * canvas.width;
+          const y = Math.random() * canvas.height * 0.6;
+          const radius = Math.random() * 8 + 3;
+          const alpha = Math.random() * 0.4 + 0.3;
+          const vx = (Math.random() - 0.5) * 2;
+          const vy = -Math.random() * 2 - 1;
+          drops.push({ x, y, radius, alpha, vx, vy });
+        }
+        
+        function updateDrops() {
+          for (let i = 0; i < drops.length; i++) {
+            const d = drops[i];
+            d.x += d.vx;
+            d.y += d.vy;
+            d.alpha -= 0.01;
+            if (d.alpha <= 0) drops.splice(i--, 1);
+          }
+        }
+        
+        function drawDrops() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (const d of drops) {
+            ctx.beginPath();
+            ctx.arc(d.x, d.y, d.radius, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255,255,255,${d.alpha})`;
+            ctx.fill();
+          }
+        }
+        
+        function loop() {
+          if (Math.random() < 0.25) createDrop();
+          updateDrops();
+          drawDrops();
+          requestAnimationFrame(loop);
+        }
+        
+        loop();
+        </script>
+
+
+<audio id="ambient-sound" src="root/assets/audio/surf.mp3"></audio>
+
+
+
+  <!-- About -->
+    <section id="about" class="section about-colored">
+        <h2 class="section-title" data-i18n="about.title">🌊 Über mich</h2>
+        <p data-i18n="about.p1">Hey, ich bin Marcel, <span id="age"></span> – der Typ, der sich irgendwo zwischen <span class="highlight">Windsurfen</span>, <span class="highlight">Designideen</span> und <span class="highlight">Tennismatchs</span> bewegt und dabei nie ganz erwachsen wirkt (und ganz ehrlich: das ist auch gut so).</p>
+        <p data-i18n="about.p2">Ich probiere gerne Neues aus – egal ob sportlich wie <span class="highlight">Surfen</span>, <span class="highlight">Skifahren</span> oder kreativ mit <span class="highlight">Photoshop &amp; Blender</span>.</p>
+        <p data-i18n="about.p3">Ich spiele auch <span class="highlight">Saxophon</span>, war mal <span class="highlight">Handball-Kreismeister</span>, habe mein <span class="highlight">Sanitäter-Zertifikat</span> – und früher war ich <span class="highlight">Mario-Kart-Junky</span> auf’m 3DS. Heute bin ich eher der Typ, der gerne unterwegs ist: <span class="highlight">Skifahren</span> in Norwegen oder Schweden, <span class="highlight">Surfen</span> in Portugal, <span class="highlight">Chillen</span> in Bulgarien – oder einfach mal mit offenen Augen durch den Alltag.</p>
+        <p data-i18n="about.p4">Im <span id="semester"></span>. Semester meines dualen Data-Science-&-KI-Studiums bin ich tagsüber bei E.ON unterwegs – dem größten Energieversorger Deutschlands. Dort geht’s für mich um datengetriebene Analysen, clevere Automatisierung und die Frage: Wie macht man Energie eigentlich smarter?</p>
+      
+        <h3 class="section-subtitle" data-i18n="about.funTitle">📸 Fun Story</h3>
+        <p class="fun-text" data-i18n="about.fun1">Am Flughafen vor meinem Abi hatte ich vier fette Mappen und dicke Bücher im Rucksack – der Sicherheitsbeamte schaute mich an, als würde ich gleich ’ne halbe Bibliothek einschmuggeln. Auf dem Rückflug wurde es noch besser: Der Beamte zieht mein Verlängerungskabel raus, legt es sich um den Hals und sagt ernsthaft:</p>
+        <blockquote class="quote" data-i18n="about.funQuote">„Damit könnte man jemanden erwürgen – das ist gefährlich!“</blockquote>
+        <p class="fun-text" data-i18n="about.fun2">Dann musste er erstmal seinen Chef holen, um zu klären, ob ich mit dem Kabel überhaupt fliegen darf. Also ja… ich bleib irgendwie immer in Erinnerung.</p>
+      
+        <h3 class="section-subtitle" data-i18n="about.valuesTitle">💬 Was mir wichtig ist</h3>
+        <ul class="about-list" data-i18n="about.values">
+          <li>Menschen, die auch mal was wagen</li>
+          <li>Echtheit, Humor &amp; ein bisschen Tiefgang</li>
+          <li>Begeisterung für das Kleine &amp; das Große</li>
+          <li>Gemeinsames Lachen – auch über sich selbst</li>
+        </ul>
+      
+        <h3 class="section-subtitle" data-i18n="about.seriesTitle">🎥 Lieblingsserien</h3>
+        <ul class="about-list" data-i18n="about.series">
+          <li>The Last of Us <span class="highlight">(Platz 1 – keine Diskussion)</span></li>
+          <li>Dark Matter – Der Zeitenläufer</li>
+          <li>Silo</li>
+        </ul>
+      
+        <h3 class="section-subtitle" data-i18n="about.otherTitle">🎾 Und sonst so?</h3>
+        <ul class="about-list" data-i18n="about.other">
+          <li>10 Jahre Handball – die letzten 3 als Kreismeister</li>
+          <li>Immer wieder Volleyball</li>
+          <li>Jetzt Tennis – weil Ballgefühl bleibt</li>
+          <li>Reisen, Musik, kreative Ideen, gutes Essen &amp; ehrliche Gespräche</li>
+        </ul>
+      </section>
+      
+  </section>
+
+  <!-- Galerie -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title with-icon" data-i18n="gallery.title">Galerie</h2>
+      <div class="image-stack"></div>
+    </div>
+  </section>
+
+<!-- Kontakt -->
+<section id="contact" class="contact-section">
+    <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
+  
+    <form action="https://formsubmit.co/d508d8bd26d783a95f1bb0bd89d7f79f" method="POST" id="contact-form">
+
+      <!-- Honeypot -->
+      <div class="honeypot" style="display:none;">
+        <label for="website">Website (nicht ausfüllen)</label>
+        <input type="text" name="website" id="website" />
+      </div>
+  
+      <!-- Anti-Spam Hidden Inputs -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://deine-seite.de/danke.html">
+  
+      <div class="form-row">
+        <label for="name" data-i18n="contact.name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+  
+      <div class="form-row">
+        <label for="message" data-i18n="contact.message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+  
+      <button type="submit" class="btn" data-i18n="contact.send">Absenden</button>
+  
+      <p id="success-message" class="form-success" style="display:none;" data-i18n="contact.success">
+        ✅ Nachricht erfolgreich gesendet!</p>
+    </form>
+  </section>
+  
+  
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Marcel Usinger</p>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/marcel-usinger-565bb8349/" target="_blank" aria-label="LinkedIn">LinkedIn</a> |
+        <a href="https://github.com/DerCrazyy" target="_blank" aria-label="GitHub">GitHub</a> |
+        <a href="https://www.instagram.com/marcel_us" target="_blank" aria-label="Instagram">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- *** Geändert: JS modularisiert & minifizierbar -->
+  <script src="root/js/scripts.js" defer></script>
+
+
+
+
+<!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Nach oben scrollen">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+  
+
+  <script>
+    const scrollBtn = document.getElementById('scrollToTop');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+  
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+<!-- Scroll to Top Button -->
+
+
+
+
+
+
+
+<!-- Contact Kein Seitenwechsel-->
+<script>
+    const form = document.getElementById('contact-form');
+    const honeypot = document.getElementById('website');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const successMessage = document.getElementById('success-message');
+  
+    let isCooldown = false;
+  
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault(); // ⛔ kein Seitenwechsel!
+  
+      if (honeypot.value !== "") {
+        alert("Spam erkannt.");
+        return;
+      }
+  
+      if (isCooldown) {
+        alert("Bitte warte 30 Sekunden, bevor du erneut sendest.");
+        return;
+      }
+  
+      isCooldown = true;
+      
+        submitButton.disabled = true;
+        submitButton.textContent = "✓ Gesendet";
+        submitButton.classList.add("success-btn");
+        successMessage.style.display = 'block';
+  
+      const formData = new FormData(form);
+  
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/marcel.usingerwebsite@gmail.com", {
+          method: "POST",
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+  
+        if (res.ok) {
+          successMessage.style.display = 'block';
+          form.reset();
+        } else {
+          alert("Fehler beim Senden. Bitte versuch es später erneut.");
+        }
+      } catch (err) {
+        alert("Verbindung fehlgeschlagen.");
+      }
+  
+      setTimeout(() => {
+        isCooldown = false;
+        submitButton.disabled = false;
+        submitButton.textContent = "Absenden";
+        successMessage.style.display = 'none';
+      }, 30000);
+    });
+  </script>
+<!-- Contact Kein Seitenwechsel-->
+
+
+
+</body>
+</html>

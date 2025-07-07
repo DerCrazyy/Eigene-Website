@@ -1,0 +1,281 @@
+{
+  "de": {
+    "about.title": "🌊 Über mich",
+    "about.p1": "Hey, ich bin Marcel, {{age}} – der Typ, der sich irgendwo zwischen Windsurfen, Designideen und Tennismatchs bewegt und dabei nie ganz erwachsen wirkt (und ganz ehrlich: das ist auch gut so).",
+    "about.p2": "Ich probiere gerne Neues aus – egal ob sportlich wie Surfen, Skifahren oder kreativ mit Photoshop & Blender.",
+    "about.p3": "Ich spiele auch Saxophon, war mal Handball-Kreismeister, habe mein Sanitäter-Zertifikat – und früher war ich Mario-Kart-Junky auf’m 3DS. Heute bin ich eher der Typ, der gerne unterwegs ist: Skifahren in Norwegen oder Schweden, Surfen in Portugal, Chillen in Bulgarien – oder einfach mal mit offenen Augen durch den Alltag.",
+    "about.p4": "Im {{semester}}. Semester meines dualen Data-Science-&-KI-Studiums bin ich tagsüber bei E.ON unterwegs – dem größten Energieversorger Deutschlands. Dort geht’s für mich um datengetriebene Analysen, clevere Automatisierung und die Frage: Wie macht man Energie eigentlich smarter?",
+    "about.funTitle": "📸 Fun Story",
+    "about.fun1": "Am Flughafen vor meinem Abi hatte ich vier fette Mappen und dicke Bücher im Rucksack – der Sicherheitsbeamte schaute mich an, als würde ich gleich ’ne halbe Bibliothek einschmuggeln. Auf dem Rückflug wurde es noch besser: Der Beamte zieht mein Verlängerungskabel raus, legt es sich um den Hals und sagt ernsthaft:",
+    "about.funQuote": "„Damit könnte man jemanden erwürgen – das ist gefährlich!“",
+    "about.fun2": "Dann musste er erstmal seinen Chef holen, um zu klären, ob ich mit dem Kabel überhaupt fliegen darf. Also ja… ich bleib irgendwie immer in Erinnerung.",
+    "about.valuesTitle": "💬 Was mir wichtig ist",
+    "about.values": [
+      "Menschen, die auch mal was wagen",
+      "Echtheit, Humor & ein bisschen Tiefgang",
+      "Begeisterung für das Kleine & das Große",
+      "Gemeinsames Lachen – auch über sich selbst"
+    ],
+    "about.seriesTitle": "🎥 Lieblingsserien",
+    "about.series": [
+      "The Last of Us (Platz 1 – keine Diskussion)",
+      "Dark Matter – Der Zeitenläufer",
+      "Silo"
+    ],
+    "about.otherTitle": "🎾 Und sonst so?",
+    "about.other": [
+      "10 Jahre Handball – die letzten 3 als Kreismeister",
+      "Immer wieder Volleyball",
+      "Jetzt Tennis – weil Ballgefühl bleibt",
+      "Reisen, Musik, kreative Ideen, gutes Essen & ehrliche Gespräche"
+    ],
+    "page.title": "Marcel Usinger – Persönliche Website",
+    "nav.start": "Start",
+    "nav.about": "Über mich",
+    "nav.gallery": "Galerie",
+    "nav.contact": "Kontakt",
+    "hero.title": "Hi, ich bin Marcel 👋",
+    "hero.subtitle": "Windsurfer, Serienjunkie, kreativer Kopf & jemand, der Neues liebt.",
+    "hero.button": "Mehr erfahren",
+    "contact.title": "Kontakt",
+    "contact.name": "Name:",
+    "contact.message": "Nachricht:",
+    "contact.send": "Absenden",
+    "contact.record": "🎤 Aufnehmen",
+    "contact.success": "✅ Nachricht erfolgreich gesendet!"
+   
+
+
+  },
+  "en": {
+    "about.title": "🌊 About me",
+    "about.p1": "Hey, I’m Marcel, {{age}} – the guy who swings between windsurfing, design ideas and tennis matches and never really grows up (and honestly: that’s a good thing).",
+    "about.p2": "I love trying new things – whether it’s sports like surfing and skiing or creative stuff with Photoshop & Blender.",
+    "about.p3": "I also play saxophone, was once a district handball champion, hold a first-aid certificate – and back in the day, I was a Mario Kart junkie on the 3DS. Today I’m more the traveling type: skiing in Norway or Sweden, surfing in Portugal, chilling in Bulgaria – or just wandering through life with open eyes.",
+    "about.p4": "In my {{semester}}th semester of a dual Data Science & AI degree, I’m working at E.ON during the day – Germany’s largest energy provider. I focus on data-driven analyses, smart automation and the question: How can we make energy smarter?",
+    "about.funTitle": "📸 Fun Story",
+    "about.fun1": "At the airport before my finals, I had four huge binders and thick books in my backpack – the security guard looked at me like I was smuggling half a library. On the return flight it got better: he pulled out my extension cable, wrapped it around his neck and seriously said:",
+    "about.funQuote": "“That could be used to strangle someone – that’s dangerous!”",
+    "about.fun2": "Then he had to call his boss to check if I was even allowed to fly with that cable. So yeah… I always leave a lasting impression.",
+    "about.valuesTitle": "💬 What really matters to me",
+    "about.values": [
+      "People who dare to take risks",
+      "Authenticity, humor & a bit of depth",
+      "Passion for the small & the big",
+      "Laughing together – even at ourselves"
+    ],
+    "about.seriesTitle": "🎥 Favorite Shows",
+    "about.series": [
+      "The Last of Us (No. 1 – no discussion)",
+      "Dark Matter – The Chroninist",
+      "Silo"
+    ],
+    "about.otherTitle": "🎾 And more?",
+    "about.other": [
+      "10 years of handball – last 3 as district champion",
+      "Regular volleyball",
+      "Now tennis – because ball feeling stays",
+      "Travel, music, creative ideas, good food & honest conversations"
+    ],
+    "page.title": "Marcel Usinger – Personal Website",
+    "nav.start": "Home",
+    "nav.about": "About Me",
+    "nav.gallery": "Gallery",
+    "nav.contact": "Contact",
+    "hero.title": "Hi, I’m Marcel 👋",
+    "hero.subtitle": "Windsurfer, series junkie, creative mind & someone who loves to try new things.",
+    "hero.button": "Learn more",
+    "contact.title": "Contact",
+    "contact.name": "Name:",
+    "contact.message": "Message:",
+    "contact.send": "Send",
+    "contact.record": "🎤 Record",
+    "contact.success": "✅ Message sent successfully!",
+    "gallery.title": "Gallery"
+  
+  },
+  "es": {
+    "about.title":"🌊 Sobre mí",
+    "about.p1":"Hola, soy Marcel, {{age}} – el tipo que oscila entre windsurf, ideas de diseño y partidos de tenis y que nunca termina de crecer (y la verdad: eso está bien).",
+    "about.p2":"Me encanta probar cosas nuevas – ya sea en deportes como surf y esquí o de forma creativa con Photoshop & Blender.",
+    "about.p3":"También toco saxofón, fui campeón local de balonmano, tengo un certificado de primeros auxilios – y en su día fui un adicto a Mario Kart en el 3DS. Hoy soy más de viajar: esquiar en Noruega o Suecia, surfear en Portugal, relajarme en Bulgaria – o simplemente pasear con los ojos bien abiertos.",
+    "about.p4":"En mi {{semester}}. semestre de mi carrera dual en Data Science & IA, trabajo en E.ON durante el día – el mayor proveedor de energía de Alemania. Me ocupo de análisis basados en datos, automatización inteligente y la pregunta: ¿Cómo hacer la energía más inteligente?",
+    "about.funTitle":"📸 Historia divertida",
+    "about.fun1":"En el aeropuerto antes de mi selectividad llevaba cuatro carpetas enormes y libros gordos en mi mochila – el agente de seguridad me miró como si estuviera introduciendo media biblioteca. En el vuelo de vuelta fue mejor: sacó mi cable de extensión, se lo puso al cuello y dijo en serio:",
+    "about.funQuote":"“¡Con eso podrías estrangular a alguien – eso es peligroso!”",
+    "about.fun2":"Entonces tuvo que llamar a su jefe para saber si estaba permitido volar con ese cable. Así que sí… siempre dejo huella.",
+    "about.valuesTitle":"💬 Lo que me importa",
+    "about.values":[
+      "Gente que se atreve",
+      "Autenticidad, humor & un poco de profundidad",
+      "Entusiasmo por lo pequeño & lo grande",
+      "Reír juntos – incluso de nosotros mismos"
+    ],
+    "about.seriesTitle":"🎥 Series favoritas",
+    "about.series":[
+      "The Last of Us (No. 1 – sin discusión)",
+      "Dark Matter – El cronista",
+      "Silo"
+    ],
+    "about.otherTitle":"🎾 ¿Y más?",
+    "about.other":[
+      "10 años de balonmano – últimos 3 como campeón local",
+      "Vóley de vez en cuando",
+      "Ahora tenis – porque el toque de balón permanece",
+      "Viajar, música, ideas creativas, buena comida & conversaciones sinceras"
+    ],
+    "page.title": "Marcel Usinger – Sitio personal",
+    "nav.start": "Inicio",
+    "nav.about": "Sobre mí",
+    "nav.gallery": "Galería",
+    "nav.contact": "Contacto",
+    "hero.title": "Hola, soy Marcel 👋",
+    "hero.subtitle": "Windsurfista, adicto a las series, mente creativa y alguien que ama probar cosas nuevas.",
+    "hero.button": "Saber más",
+    "contact.title": "Contacto",
+    "contact.name": "Nombre:",
+    "contact.message": "Mensaje:",
+    "contact.send": "Enviar",
+    "contact.record": "🎤 Grabar",
+    "contact.success": "✅ ¡Mensaje enviado con éxito!",
+    "gallery.title": "Galería"
+  },
+  "fr": {
+    "about.title":"🌊 À propos de moi",
+    "about.p1":"Salut, je suis Marcel, {{age}} – le gars qui oscille entre la planche à voile, les idées de design et les matchs de tennis et qui ne grandit jamais vraiment (et honnêtement : c’est tant mieux).",
+    "about.p2":"J’adore essayer de nouvelles choses – que ce soit dans des sports comme le surf et le ski ou de façon créative avec Photoshop & Blender.",
+    "about.p3":"Je joue aussi du saxophone, j’ai été champion local de handball, j’ai un certificat de secourisme – et avant j’étais accro à Mario Kart sur le 3DS. Aujourd’hui, je suis plutôt du genre à voyager : skier en Norvège ou en Suède, surfer au Portugal, me détendre en Bulgarie – ou simplement flâner les yeux grands ouverts.",
+    "about.p4":"Dans mon {{semester}}ᵉ semestre de licence en Data Science & IA en alternance, je travaille chez E.ON la journée – le plus grand fournisseur d’énergie d’Allemagne. Je m’occupe d’analyses basées sur les données, d’automatisation intelligente et de la question : comment rendre l’énergie plus intelligente ?",
+    "about.funTitle":"📸 Anecdote",
+    "about.fun1":"À l’aéroport avant mon bac, j’avais quatre gros classeurs et des livres épais dans mon sac à dos – l’agent de sécurité m’a regardé comme si je faisais entrer une demi-bibliothèque. Au retour, c’était encore mieux : il a sorti mon câble d’extension, l’a passé autour de son cou et a dit sérieusement :",
+    "about.funQuote":"« Avec ça, on pourrait étrangler quelqu’un – c’est dangereux ! »",
+    "about.fun2":"Puis il a dû appeler son chef pour vérifier si je pouvais vraiment voler avec ce câble. Donc oui… je laisse toujours une impression durable.",
+    "about.valuesTitle":"💬 Ce qui compte pour moi",
+    "about.values":[
+      "Des gens qui osent",
+      "Authenticité, humour & un peu de profondeur",
+      "Enthousiasme pour le petit & le grand",
+      "Rire ensemble – même de nous-mêmes"
+    ],
+    "about.seriesTitle":"🎥 Séries préférées",
+    "about.series":[
+      "The Last of Us (Nᵒ 1 – pas de discussion)",
+      "Dark Matter – Le chroniquier",
+      "Silo"
+    ],
+    "about.otherTitle":"🎾 Et sinon ?",
+    "about.other":[
+      "10 ans de handball – 3 derniers en tant que champion local",
+      "Volley de temps en temps",
+      "Maintenant tennis – parce que le toucher de balle reste",
+      "Voyages, musique, idées créatives, bonne nourriture & conversations sincères"
+    ],
+    "page.title": "Marcel Usinger – Site personnel",
+    "nav.start": "Accueil",
+    "nav.about": "À propos",
+    "nav.gallery": "Galerie",
+    "nav.contact": "Contact",
+    "hero.title": "Salut, je suis Marcel 👋",
+    "hero.subtitle": "Windsurfer, passionné de séries, esprit créatif & quelqu’un qui aime découvrir de nouvelles choses.",
+    "hero.button": "En savoir plus",
+    "contact.title": "Contact",
+    "contact.name": "Nom :",
+    "contact.message": "Message :",
+    "contact.send": "Envoyer",
+    "contact.record": "🎤 Enregistrer",
+    "contact.success": "✅ Message envoyé avec succès !",
+    "gallery.title": "Galerie"
+  },
+  "zh": {
+    "about.title":"🌊 关于我",
+    "about.p1":"嗨，我是Marcel，{{age}} – 一个在风帆冲浪、设计灵感和网球比赛之间游走，从未真正长大的人（老实说：这也挺好）。",
+    "about.p2":"我喜欢尝试新事物 – 无论是像冲浪、滑雪这样的运动，还是用Photoshop & Blender进行创意创作。",
+    "about.p3":"我还会演奏萨克斯，曾是地区手球冠军，有急救证书 – 以前我还是个3DS上的马里奥赛车迷。如今，我更喜欢旅行：在挪威或瑞典滑雪，在葡萄牙冲浪，在保加利亚放松 – 或者只是睁大眼睛漫步生活。",
+    "about.p4":"在我的{{semester}}学期的双元制数据科学与人工智能专业中，白天我在德国最大的能源供应商E.ON工作。我专注于数据驱动的分析、智能自动化，以及如何让能源变得更智能这个问题。",
+    "about.funTitle":"📸 有趣的故事",
+    "about.fun1":"在我高考前的机场，我背包里装了四大摞文件夹和厚厚的书 – 安检人员看着我，好像我要走私半个图书馆。回程时更夸张：他把我的延长线拔出来，挂在脖子上，严肃地说：",
+    "about.funQuote":"“这可能用来勒死某人 – 这很危险！”",
+    "about.fun2":"然后他得叫他的上司来确认我能否带着这根线飞行。所以，是的……我总能给人留下深刻印象。",
+    "about.valuesTitle":"💬 对我重要的事",
+    "about.values":[
+      "敢于冒险的人",
+      "真实、幽默 & 一点深度",
+      "对小事 & 大事的热情",
+      "一起大笑 – 也笑自己"
+    ],
+    "about.seriesTitle":"🎥 最喜欢的剧集",
+    "about.series":[
+      "The Last of Us（第1名 – 无可争议）",
+      "Dark Matter – 时间编年史",
+      "Silo"
+    ],
+    "about.otherTitle":"🎾 还有呢？",
+    "about.other":[
+      "10年手球 – 最后3年为地区冠军",
+      "不时打排球",
+      "现在打网球 – 因为球感依旧",
+      "旅游、音乐、创意、好吃的 & 真诚的对话"
+    ],
+    "page.title": "Marcel Usinger – 个人网站",
+    "nav.start": "首页",
+    "nav.about": "关于我",
+    "nav.gallery": "画廊",
+    "nav.contact": "联系",
+    "hero.title": "你好，我是 Marcel 👋",
+    "hero.subtitle": "帆板爱好者，剧集迷，创意思维者，喜欢尝试新事物。",
+    "hero.button": "了解更多",
+    "contact.title": "联系",
+    "contact.name": "姓名：",
+    "contact.message": "留言：",
+    "contact.send": "发送",
+    "contact.record": "🎤 录音",
+    "contact.success": "✅ 消息发送成功！",
+    "gallery.title": "画廊"
+  },
+  "ar": {
+    "about.title":"🌊 عني",
+    "about.p1":"مرحباً، أنا Marcel، {{age}} – الشخص الذي يتنقل بين ركوب الأمواج الشراعية، أفكار التصميم ومباريات التنس ولا يكبر أبداً (وبصراحة: وهذا أمر رائع).",
+    "about.p2":"أحب تجربة أشياء جديدة – سواء كانت رياضية مثل ركوب الأمواج والتزلج أو إبداعية باستخدام Photoshop & Blender.",
+    "about.p3":"أعزف أيضاً الساكسفون، كنت بطل بطولة اليد المحلية، لدي شهادة إسعافات أولية – وفي السابق كنت مدمن Mario Kart على الـ3DS. اليوم أحب السفر أكثر: التزلج في النرويج أو السويد، ركوب الأمواج في البرتغال، الاسترخاء في بلغاريا – أو مجرد التجول بعينين مفتوحتين.",
+    "about.p4":"في فصلي الدراسي {{semester}} من دراستي الثنائية لعلوم البيانات والذكاء الاصطناعي، أعمل نهاراً في E.ON – أكبر مزود للطاقة في ألمانيا. أركز على التحليلات المعتمدة على البيانات، الأتمتة الذكية والسؤال: كيف نجعل الطاقة أكثر ذكاءً؟",
+    "about.funTitle":"📸 قصة ممتعة",
+    "about.fun1":"في المطار قبل امتحاني النهائي، كان لدي أربع ملفات ضخمة وكتب سميكة في حقيبتي – نظر إلي ضابط الأمن كما لو كنت مهرباً نصف مكتبة. في رحلة العودة أصبح الأمر أفضل: أخرج كابل التمديد الخاص بي، لفه حول عنقه وقال بجدية:",
+    "about.funQuote":"“بإمكانك خنق شخص ما بهذا – هذا خطر!”",
+    "about.fun2":"ثم اضطر لاستدعاء رئيسه ليتحقق مما إذا كان مسموحاً لي بالطيران بهذا الكابل. لذا نعم… دائماً أترك انطباعاً لا يُنسى.",
+    "about.valuesTitle":"💬 ما يهمني",
+    "about.values":[
+      "الأشخاص الذين يجرؤون",
+      "الأصالة، الفكاهة & لمسة عمق",
+      "الحماس للصغير & الكبير",
+      "الضحك معاً – حتى على أنفسنا"
+    ],
+    "about.seriesTitle":"🎥 المسلسلات المفضلة",
+    "about.series":[
+      "The Last of Us (المرتبة الأولى – بلا نقاش)",
+      "Dark Matter – سجلات الزمن",
+      "Silo"
+    ],
+    "about.otherTitle":"🎾 ماذا أيضاً؟",
+    "about.other":[
+      "10 سنوات من كرة اليد – آخر 3 كبطل محلي",
+      "كرة الطائرة بين الحين والآخر",
+      "الآن التنس – لأن الشعور بالكرة يبقى",
+      "السفر، الموسيقى، الأفكار الإبداعية، الطعام الجيد & المحادثات الصادقة"
+    ],
+    "page.title": "مارسيل أوزينجر – الموقع الشخصي",
+    "nav.start": "الرئيسية",
+    "nav.about": "عنّي",
+    "nav.gallery": "المعرض",
+    "nav.contact": "اتصال",
+    "hero.title": "مرحبًا، أنا مارسيل 👋",
+    "hero.subtitle": "هاوٍ لركوب الأمواج، مدمن مسلسلات، مبدع ويحب تجربة الجديد.",
+    "hero.button": "اعرف المزيد",
+    "contact.title": "اتصال",
+    "contact.name": "الاسم:",
+    "contact.message": "رسالة:",
+    "contact.send": "إرسال",
+    "contact.record": "🎤 تسجيل",
+    "contact.success": "✅ تم إرسال الرسالة بنجاح!",
+    "gallery.title": "المعرض"
+  }
+}
